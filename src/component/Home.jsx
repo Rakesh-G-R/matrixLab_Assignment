@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import '../style/Home.css';
 
 function Home() {
@@ -7,8 +7,8 @@ function Home() {
     const [animateColumn2, setAnimateColumn2] = useState(false);
     const [animateColumn3, setAnimateColumn3] = useState(false);
     const contentRef = useRef(null);
-    
-    
+
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,7 +29,7 @@ function Home() {
         };
     }, []);
 
-     useEffect(() => {
+    useEffect(() => {
         const handleScrollAnimation = () => {
             const contentTop = contentRef.current.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
@@ -100,12 +100,12 @@ function Home() {
                             <img src="/Picture1.png" alt="" />
                             <img src="/Picture2.png" alt="" />
                         </div>
-                        <div className={`home-column2 ${animateColumn1 ? 'animate' : ''}`}>
+                        <div className={`home-column2 ${animateColumn2 ? 'animate' : ''}`}>
                             <img src="/Picture3.png" alt="" />
                             <img src="/Picture4.png" alt="" />
                             <img src="/Picture5.png" alt="" />
                         </div>
-                        <div className={`home-column3 ${animateColumn1 ? 'animate' : ''}`}>
+                        <div className={`home-column3 ${animateColumn3 ? 'animate' : ''}`}>
                             <img src="/Picture6.png" alt="" />
                             <img src="/Picture7.png" alt="" />
                             <img src="/Picture8.png" alt="" />
@@ -113,7 +113,14 @@ function Home() {
                     </div>
                 </section>
                 <section className='midpage'>
-                    {/* Additional content */}
+                    <div>
+                       <div>
+                         <div>
+                            <h2><span>Create, customize, and publish</span><span> your digital persona to life effortlessly.</span></h2>
+                         </div>
+                       </div>
+                    </div>
+                    
                 </section>
             </section>
         </div>
