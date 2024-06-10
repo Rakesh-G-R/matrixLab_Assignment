@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #000000;
+  box-sizing: border-box;
+  overflow-x: hidden; 
+}
+.main {
+  width: 100%;
+  height: 8249px;
+  position: relative;
+}
+
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Height of the navbar */
+  pointer-events: none; /* Allows interaction with elements below the overlay */
+  z-index: 5;
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
+.blur-overlay.active {
+  display: block;
+}
+
+.home {
+  /* Height of the navbar */
+  transition: filter 0.3s; /* Smooth transition for blur effect */
+}
+.navbar {
+  width: 100%;
+  height: 72px;
+  position: sticky;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  top: 0.42px;
+  left: 0.46px;
+  gap: 0px;
+  opacity: 0px;
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+}
+
+.navbar > div {
+  width: 91.11%;
+  height: 40px;
+  display: flex;
+  gap: 0px;
+  justify-content: space-between;
+  align-items: center !important;
+  opacity: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar > div > div:nth-of-type(1) {
+  width: 444px;
+  height: 26.5px;
+  display: flex;
+  gap: 48px;
+  opacity: 0px;
+}
+
+.navbar-btns {
+  width: 279px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0px;
+}
+
+.navbar-link {
+  width: 280px;
+  height: 26.5px;
+  display: flex;
+  display: flex;
+  padding: 2px 0px 0px 0px;
+  gap: 32px;
+  opacity: 0px;
+}
+
+.navbar-link > p {
+  font-family: "Outfit";
+  margin-top: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.navbar > div > div:nth-of-type(1) > p {
+  margin-top: 0px;
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25.2px;
+  letter-spacing: 0.5em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.navbar-btns > button:nth-of-type(1) {
+  padding: 13px 24px 11px 24px;
+  width: 134px;
+  height: 40px;
+  gap: 0px;
+  border-radius: 4px;
+  opacity: 0px;
+  background-color: #ffffff4d;
+}
+
+.navbar-btns > button:nth-of-type(2) {
+  padding: 13px 24px 11px 24px;
+  width: 133px;
+  height: 40px;
+  gap: 0px;
+  border-radius: 4px;
+  opacity: 0px;
+  background: linear-gradient(90deg, #9e6ee5 0%, #fa75f8 100%);
+}
+
+.navbar-btns p {
+  margin-top: 0px;
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  width: 85px;
+  height: 16px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+/*******************Home*********************/
+
+/****home-container1****/
+
+.home {
+  width: 1440px;
+  height: 1292px;
+  top: 72.42px;
+  left: 0.46px;
+  gap: 0px;
+  opacity: 0px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(158, 110, 230, 0.28) 0%,
+    rgba(158, 110, 230, 0) 100%
+  );
+  transition: filter 0.3s;
+}
+
+.home.scrolled {
+  filter: blur(5px); 
+}
+
+.home-container1 {
+  width: 660px;
+  height: 494.5px;
+  margin-top: 127.58px;
+  margin-left: 175.54px;
+  gap: 64px;
+  opacity: 0px;
+}
+
+.home-container1 > div:nth-of-type(1) {
+  width: 313px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 4px 12px 4px 12px;
+  gap: 8px;
+  border-radius: 9px;
+  background: linear-gradient(
+    94.15deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(171, 171, 171, 0.15) 100%
+  );
+  opacity: 0px;
+}
+
+.home-container1 > div:nth-of-type(1) > p:nth-of-type(1) {
+  margin: 0px;
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.home-container1 > div:nth-of-type(1) > p:nth-of-type(2) {
+  margin: 0px;
+  font-family: "Outfit";
+  width: 265px;
+  height: 24.5px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.home-heading {
+  width: 660px;
+  height: 222.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  opacity: 0px;
+  margin-top: 64px;
+}
+
+.home-heading h1 {
+  margin: 0px;
+  font-family: "Outfit";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 59px;
+  text-align: left;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.home-heading p {
+  margin: 0px;
+  font-family: "Outfit";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.home-btn1 {
+  width: 190px;
+  height: 120px;
+  padding: 0px 0px 56px 0px;
+  gap: 0px;
+  opacity: 0px;
+  margin-top: 48px;
+}
+
+.home-btn1 > button {
+  width: 190px;
+  height: 64px;
+  gap: 0px;
+  padding: 22px 32px 16px 32px;
+  border-radius: 8px;
+  opacity: 0px;
+  background: linear-gradient(90deg, #9e6ee5 0%, #fa75f8 100%);
+}
+
+.home-btn1 > button > p {
+  font-family: "Outfit";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  width: 126px;
+  height: 24.5px;
+  padding: 0px 0px 0.5px 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.home > section {
+  display: flex;
+}
+
+/****home-container2****/
+.home-container2 {
+  width: 633.82px;
+  height: 740.48px;
+  display: flex;
+  margin-top: -93.45px;
+  gap: 49px;
+  opacity: 0px;
+}
+
+.home-column1 {
+  width: 178.31px;
+  height: 740.48px;
+  padding: 111px 0px 0px 0px;
+  gap: 48.63px;
+  opacity: 0px;
+}
+
+.home-column2 {
+  width: 179.21px;
+  height: 631.28px;
+  gap: 47.73px;
+  opacity: 0px;
+}
+
+.home-column3 {
+  width: 178.31px;
+  height:740.48px;
+  padding: 111px 0px 0px 0px;
+  gap: 48.63px;
+  opacity: 0px;
+}
+
+
+
+
+
+
+
+/***********animation*************/
+.home-column1, .home-column2, .home-column3 {
+  transition: transform 1s ease-in;
+}
+
+.home-column1.animate {
+  transform: translateY(-750px);
+}
+
+.home-column2.animate {
+  transform: translateY(-710px); /* Example animation */
+  transition-delay: 1s; /* Delay for 1 second */
+}
+
+.home-column3.animate {
+  transform: translateY(-750px); /* Example animation */
+}
