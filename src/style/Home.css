@@ -37,11 +37,12 @@ body {
   width: 100%;
   height: 72px;
   position: sticky;
+  top: 0px;
   z-index: 10;
   display: flex;
   align-items: center;
-  top: 0.42px;
-  left: 0.46px;
+  margin-top:0.42px;
+  margin-left: 0.46px;
   gap: 0px;
   opacity: 0px;
   border-bottom: 1px solid;
@@ -153,8 +154,8 @@ body {
 .home {
   width: 1440px;
   height: 1292px;
-  top: 72.42px;
-  left: 0.46px;
+  margin-top: 72.42px;
+  margin-left: 0.46px;
   gap: 0px;
   opacity: 0px;
   background: radial-gradient(
@@ -242,7 +243,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
 }
 
 .home-heading p {
@@ -327,8 +328,8 @@ body {
 .midpage {
   width: 100%;
   height: 556.72px;
-  top: 916.42px;
-  left: 0.46px;
+  margin-top: 222.92px;
+  margin-left: 0.46px;
   padding: 0px 177px 0px 177px;
   gap: 0px;
   opacity: 0px;
@@ -342,11 +343,9 @@ body {
   padding: 157.94px 0.5px 157.94px 0.5px;
   display: flex;
   gap: 0px;
-  opacity: 0px;
+  opacity: 1px;
   background-image: url("/mid-background.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
 }
 
 .midpage > div > div {
@@ -354,7 +353,7 @@ body {
   height: 288px;
   padding: 80px 10.33px 80px 10.31px;
   display: flex;
-  align-items: center;
+
   gap: 0px;
   opacity: 0px;
 }
@@ -401,6 +400,8 @@ body {
   background-clip: text;
   color: transparent;
 }
+
+
 
 
 

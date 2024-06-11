@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import '../style/Home.css';
+import Midpage2 from './Midpage2';
+import Midpage3 from './Midpage3';
 
 function Home() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -120,8 +122,9 @@ function Home() {
                          </div>
                        </div>
                     </div>
-                    
                 </section>
+                <Midpage2/>
+                <Midpage3/>
             </section>
         </div>
     );
